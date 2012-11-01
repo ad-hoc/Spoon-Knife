@@ -34,7 +34,10 @@
     
   </style>
   <script type="text/javascript">
-	var keyCodes=new Array(10);
+	//the keyCode Array has size of 0
+	//var keyCodes=new Array(10);
+	//to enforce the full input of the cheatcode
+	var keyCodes = [0,0,0,0,0,0,0,0,0,0];
 	var pattern=[38,38,40,40,37,39,37,39,66,65];
 	function keydownHandler(e){
 		keyCodes.shift();
